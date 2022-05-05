@@ -19,15 +19,26 @@ const Gallery = () => {
     round.push(<Card name={person} />);
   }
 
+  const rngMe = (levelArr) => {
+    for (let i = levelArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      const temp = levelArr[i];
+      levelArr[i] = levelArr[j];
+      levelArr[j] = temp;
+    }
+  };
+  
+  rngMe(level1);
   return (
-    <ul>
-      <h1>yo</h1>
-      {level1.map( x => <Card name={x} /> )}
+    <ul className="gallery">
+      {level1.map((x) => (
+        <Card name={x} />
+      ))}
     </ul>
   );
 };
 
-const Card = ({name}) => {
+const Card = ({ name }) => {
   return (
     <li className="card">
       <img
