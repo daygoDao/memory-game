@@ -15,22 +15,20 @@ const Gallery = ({ currScore, bestScore, setBest, setCurr }) => {
     "zoro",
   ]);
 
-  return (
-    <ul className="gallery">
-      {level1.map((x, i) => (
-        <Card
-          name={x}
-          key={i}
-          level={level1}
-          currScore={currScore}
-          bestScore={bestScore} 
-          setLevel={setLevel1}
-          setBest={setBest}
-          setCurr={setCurr}
-        />
-      ))}
-    </ul>
-  );
+  const display = level1.map((x, i) => (
+    <Card
+      name={x}
+      key={i}
+      level={level1}
+      currScore={currScore}
+      bestScore={bestScore}
+      setLevel={setLevel1}
+      setBest={setBest}
+      setCurr={setCurr}
+    />
+  ));
+
+  return <ul className="gallery">{display}</ul>;
 };
 
 export default Gallery;
