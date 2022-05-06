@@ -1,5 +1,5 @@
 import Gallery from "./Gallery";
-import './style.css'
+import "./style.css";
 
 function App() {
   return (
@@ -11,4 +11,3 @@ function App() {
 }
 
 export default App;
-    
