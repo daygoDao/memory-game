@@ -1,5 +1,16 @@
 import React from "react";
 
+const rngLevel = (levelArr) => {
+  const shuffledArr = levelArr.map((x) => x);
+  for (let i = shuffledArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * i);
+    const temp = shuffledArr[i];
+    shuffledArr[i] = shuffledArr[j];
+    shuffledArr[j] = temp;
+  }
+  return shuffledArr;
+};
+
 const Gallery = () => {
   const level1 = [
     "brook",
@@ -19,26 +30,17 @@ const Gallery = () => {
     round.push(<Card name={person} />);
   }
 
-  const rngMe = (levelArr) => {
-    for (let i = levelArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * i);
-      const temp = levelArr[i];
-      levelArr[i] = levelArr[j];
-      levelArr[j] = temp;
-    }
-  };
-  
-  rngMe(level1);
+  console.log(level1);
   return (
     <ul className="gallery">
-      {level1.map((x) => (
-        <Card name={x} />
+      {rngLevel(level1).map((x, i) => (
+        <Card name={x}  key={i} />
       ))}
     </ul>
   );
 };
 
-const Card = ({ name }) => {
+const Card = ({ name, index }) => {
   return (
     <li className="card">
       <img
