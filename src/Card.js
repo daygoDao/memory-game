@@ -19,15 +19,21 @@ const Card = ({
   currScore,
 }) => {
   const handleShuffle = () => {
-    console.log(currScore.indexOf(name) !== -1)
-    if(currScore.indexOf(name) !== -1) {
-        //reset curr and check to update best if applicable
-        console.log('in arr')
+    console.log(currScore.indexOf(name) !== -1);
+    if (currScore.indexOf(name) !== -1) {
+      console.log("in arr");
+
+      if (currScore.length > bestScore) {
+        setBest(currScore.length);
+      }
+      setCurr([]);
     } else {
-        console.log('not in arr')
-        setCurr( (prevState) => [...prevState, name])
+      console.log("not in arr");
+      setCurr((prevState) => [...prevState, name]);
     }
+
     setLevel(rngLevel(level));
+    console.log(currScore);
   };
 
   return (
