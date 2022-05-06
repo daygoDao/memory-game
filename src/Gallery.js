@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const rngLevel = (levelArr) => {
   const shuffledArr = levelArr.map((x) => x);
@@ -12,7 +13,19 @@ const rngLevel = (levelArr) => {
 };
 
 const Gallery = () => {
-  const level1 = [
+  // const level1 = [
+  //   "brook",
+  //   "chopper",
+  //   "franky",
+  //   "god",
+  //   "jinbe",
+  //   "luffy",
+  //   "nami",
+  //   "robin",
+  //   "sanji",
+  //   "zoro",
+  // ];
+  const [level1, setLevel1] = useState([
     "brook",
     "chopper",
     "franky",
@@ -23,26 +36,25 @@ const Gallery = () => {
     "robin",
     "sanji",
     "zoro",
-  ];
+  ]);
 
-  let round = [];
-  for (let person of level1) {
-    round.push(<Card name={person} />);
-  }
-
-  console.log(level1);
   return (
     <ul className="gallery">
       {rngLevel(level1).map((x, i) => (
-        <Card name={x}  key={i} />
+        <Card name={x} key={i} level={level1} setLevel={setLevel1} />
       ))}
     </ul>
   );
 };
 
-const Card = ({ name, index }) => {
+const Card = ({ name, level, setLevel }) => {
+  const cardClicked = () => {
+    console.log(level);
+    setLevel(rngLevel(level))
+  };
+
   return (
-    <li className="card">
+    <li className="card" onClick={cardClicked}>
       <img
         src={`./images/wanted/${name}.png 
       `}
