@@ -1,11 +1,22 @@
+import { useState } from "react";
 import Gallery from "./Gallery";
 import "./style.css";
 
 function App() {
+  const [currScore, setCurrScore] = useState([]);
+  const [bestScore, setBestScore] = useState(0);
+
   return (
     <div className="App">
       <h1>Memory Game</h1>
-      <Gallery />
+      <section>score: {currScore.length}</section>
+      <section>best score: {bestScore}</section>
+      <Gallery
+        currScore={currScore}
+        bestScore={bestScore}
+        setBest={setBestScore}
+        setCurr={setCurrScore}
+      />
     </div>
   );
 }

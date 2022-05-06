@@ -9,8 +9,24 @@ const rngLevel = (levelArr) => {
   return shuffledArr;
 };
 
-const Card = ({ name, level, setLevel }) => {
+const Card = ({
+  name,
+  level,
+  setLevel,
+  setBest,
+  setCurr,
+  bestScore,
+  currScore,
+}) => {
   const handleShuffle = () => {
+    console.log(currScore.indexOf(name) !== -1)
+    if(currScore.indexOf(name) !== -1) {
+        //reset curr and check to update best if applicable
+        console.log('in arr')
+    } else {
+        console.log('not in arr')
+        setCurr( (prevState) => [...prevState, name])
+    }
     setLevel(rngLevel(level));
   };
 
