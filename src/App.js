@@ -3,6 +3,7 @@ import Gallery from "./Gallery";
 import "./style.css";
 
 function App() {
+  const [currLevel, setNewLevel] = useState(0);
   const [currScore, setCurrScore] = useState([]);
   const [bestScore, setBestScore] = useState(0);
 
@@ -16,6 +17,8 @@ function App() {
         bestScore={bestScore}
         setBest={setBestScore}
         setCurr={setCurrScore}
+        currLevel={currLevel}
+        setNewLevel={setNewLevel}
       />
     </div>
   );
