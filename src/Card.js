@@ -18,6 +18,8 @@ const Card = ({
   bestScore,
   currScore,
 }) => {
+  console.log(level, 'ayo')
+
   const handleShuffle = () => {
     console.log(currScore.indexOf(name) !== -1);
     if (currScore.indexOf(name) !== -1) {
@@ -32,14 +34,17 @@ const Card = ({
       setCurr((prevState) => [...prevState, name]);
     }
 
-    setLevel(rngLevel(level));
+    setLevel( (prevState) => {
+      console.log('setLevel called ', prevState)
+      return {...prevState, people: rngLevel(prevState.people)}
+    });
     console.log(currScore);
   };
-
+ 
   return (
     <li className="card" onClick={handleShuffle}>
       <img
-        src={`./images/wanted/${name}.png 
+        src={`./images/${level.level}/${name}.png 
         `}
         alt={name}
       />

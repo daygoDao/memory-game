@@ -3,31 +3,26 @@ import Card from "./Card";
 import levelDB from './levels'
 
 const Gallery = ({ currScore, bestScore, setBest, setCurr, currLevel, setNewLevel }) => {
-  const [level, setLevel] = useState([
-    "brook",
-    "chopper",
-    "franky",
-    "god",
-    "jinbe",
-    "luffy",
-    "nami",
-    "robin",
-    "sanji",
-    "zoro",
-  ]);
+  const [level, setLevel] = useState(levelDB.levels[0]);
+  // const [level, setLevel] = useState([
+  //   "brook",
+  //   "chopper",
+  //   "franky",
+  //   "god",
+  //   "jinbe",
+  //   "luffy",
+  //   "nami",
+  //   "robin",
+  //   "sanji",
+  //   "zoro",
+  // ]);
   
-  // const handleLevels = () => {
-  //   setLevel()
-  // }
+  const handleLevels = () => {
+    setLevel()
+  }
 
-  // level decider
-  // switch(currLevel) {
-  //   case 0: 
-  // }
-
-  console.log(levelDB.levels)
-
-  const display = level.map((x, i) => (
+  const test = [1, 2, 3];
+  const display = level.people.map((x, i) => (
     <Card
       name={x}
       key={i}
