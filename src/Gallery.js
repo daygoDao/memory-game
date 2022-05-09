@@ -5,7 +5,6 @@ import levelDB from "./levels";
 const Gallery = ({
   bestScore,
   setBest,
-  setCurr,
   currLevel,
   setNewLevel,
   setCurrScore,
@@ -13,13 +12,17 @@ const Gallery = ({
   const [level, setLevel] = useState(levelDB.levels[0]);
   const [levelScore, setLevelScore] = useState([]);
 
+  console.log('currLevel is: ' + currLevel)
+
   useEffect(() => {
     // check if level is done
-    if (levelScore.length == 1) {
-      //level.people.length) {
+    if (levelScore.length == level.people.length) {
       console.log("done");
+      setCurrScore( prev => prev + 1 );
+      setNewLevel(levelDB.levels[currLevel]);
     }
   }, [levelScore]);
+
   const handleLevels = () => {
     setLevel();
   };
