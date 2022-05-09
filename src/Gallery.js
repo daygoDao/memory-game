@@ -7,19 +7,21 @@ const Gallery = ({
   setBest,
   currLevel,
   setNewLevel,
-  setCurrScore,
+  setNewScore,
 }) => {
-  const [level, setLevel] = useState(levelDB.levels[0]);
+  const [level, setLevel] = useState(levelDB.levels[currLevel]);
   const [levelScore, setLevelScore] = useState([]);
 
   console.log('currLevel is: ' + currLevel)
+  console.log(levelScore);
 
   useEffect(() => {
     // check if level is done
     if (levelScore.length == level.people.length) {
       console.log("done");
-      setCurrScore( prev => prev + 1 );
-      setNewLevel(levelDB.levels[currLevel]);
+      setNewLevel( prev => prev + 1 );
+      setLevelScore([]);
+      setLevel(s => levelDB.levels[currLevel]);
     }
   }, [levelScore]);
 

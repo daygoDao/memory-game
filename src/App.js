@@ -4,7 +4,7 @@ import "./style.css";
 
 function App() {
   const [currLevel, setNewLevel] = useState(0);
-  const [currScore, setCurrScore] = useState(0);
+  const [currScore, setNewScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
   return (
@@ -18,7 +18,7 @@ function App() {
         setBest={setBestScore}
         currLevel={currLevel}
         setNewLevel={setNewLevel}
-        setCurrScore={setCurrScore}
+        setNewScore={setNewScore}
       />
     </div>
   );

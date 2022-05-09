@@ -42,7 +42,6 @@ const Card = ({
       console.log("setLevel called ", prevState);
       return { ...prevState, people: rngLevel(prevState.people) };
     });
-    console.log(levelScore);
   };
 
   return (
