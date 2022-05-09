@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./Card";
 import levelDB from "./levels";
 
@@ -10,10 +10,16 @@ const Gallery = ({
   setNewLevel,
   setCurrScore,
 }) => {
-
   const [level, setLevel] = useState(levelDB.levels[0]);
   const [levelScore, setLevelScore] = useState([]);
 
+  useEffect(() => {
+    // check if level is done
+    if (levelScore.length == 1) {
+      //level.people.length) {
+      console.log("done");
+    }
+  }, [levelScore]);
   const handleLevels = () => {
     setLevel();
   };
@@ -23,10 +29,10 @@ const Gallery = ({
       name={x}
       key={i}
       level={level}
-      levelScore={levelScore}
       bestScore={bestScore}
       setLevel={setLevel}
       setBest={setBest}
+      levelScore={levelScore}
       setLevelScore={setLevelScore}
     />
   ));

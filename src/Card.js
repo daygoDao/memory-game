@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const rngLevel = (levelArr) => {
   const shuffledArr = levelArr.map((x) => x);
   for (let i = shuffledArr.length - 1; i > 0; i--) {
@@ -14,9 +16,9 @@ const Card = ({
   level,
   setLevel,
   setBest,
-  setLevelScore,
   bestScore,
   levelScore,
+  setLevelScore,
 }) => {
   // console.log(level, 'ayo')
 
@@ -34,13 +36,15 @@ const Card = ({
       setLevelScore((prevState) => [...prevState, name]);
     }
 
-    setLevel( (prevState) => {
-      console.log('setLevel called ', prevState)
-      return {...prevState, people: rngLevel(prevState.people)}
+
+
+    setLevel((prevState) => {
+      console.log("setLevel called ", prevState);
+      return { ...prevState, people: rngLevel(prevState.people) };
     });
     console.log(levelScore);
   };
- 
+
   return (
     <li className="card" onClick={handleShuffle}>
       <img
