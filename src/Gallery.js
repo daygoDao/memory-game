@@ -1,21 +1,29 @@
 import { useState } from "react";
 import Card from "./Card";
-import levelDB from './levels'
+import levelDB from "./levels";
 
-const Gallery = ({ currScore, bestScore, setBest, setCurr, currLevel, setNewLevel }) => {
+const Gallery = ({
+  bestScore,
+  setBest,
+  setCurr,
+  currLevel,
+  setNewLevel,
+  setCurrScore,
+}) => {
+
   const [level, setLevel] = useState(levelDB.levels[0]);
   const [levelScore, setLevelScore] = useState([]);
-  
+
   const handleLevels = () => {
-    setLevel()
-  }
+    setLevel();
+  };
 
   const display = level.people.map((x, i) => (
     <Card
       name={x}
       key={i}
       level={level}
-      levelScore={currScore}
+      levelScore={levelScore}
       bestScore={bestScore}
       setLevel={setLevel}
       setBest={setBest}
