@@ -20,14 +20,14 @@ const Card = ({
   levelScore,
   setLevelScore,
   setNewScore,
+  resetGame,
 }) => {
-
   const handleShuffle = () => {
     console.log(levelScore.indexOf(name) !== -1);
     if (levelScore.indexOf(name) !== -1) {
       console.log("in arr");
       setNewScore(0);
-      setLevelScore([]);
+      resetGame();
     } else {
       console.log("not in arr");
       setLevelScore((prevState) => [...prevState, name]);
@@ -39,7 +39,6 @@ const Card = ({
     }
     // rng peoples
     setLevel((prevState) => {
-      console.log("setLevel called ", prevState);
       return { ...prevState, people: rngLevel(prevState.people) };
     });
   };

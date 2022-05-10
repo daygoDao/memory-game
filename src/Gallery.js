@@ -7,28 +7,28 @@ const Gallery = ({ bestScore, setBest, setNewScore }) => {
   const [level, setLevel] = useState(levelDB.levels[currLevel]);
   const [levelScore, setLevelScore] = useState([]);
 
+  const resetGame = () => {
+    setNewLevel(0);
+    setLevel({ ...levelDB.levels[0] });
+    setLevelScore([]);
+  };
+
+  // check level is finished
   useEffect(() => {
-    console.log("within useEffect #1: check if level is done");
-    console.log(levelScore);
     if (levelScore.length == level.people.length) {
-      console.log("done");
       setNewLevel((prev) => prev + 1);
     }
   }, [level, levelScore]);
-
+ 
+  // chevk if game is finished
   useEffect(() => {
-    console.log("currLevel is: " + currLevel);
-    console.log(levelDB.levels[currLevel]);
     if (currLevel > levelDB.levels.length - 1) {
-      console.log("game is finished");
-      alert('finished game, continue to add more to your score!')
-      setNewLevel(0)
-      setLevel({ ...levelDB.levels[0] });
+      alert("finished game, continue to add more to your score!");
+      resetGame();
     } else {
-      console.log("within useEffect #2: currLevel updated");
       setLevel({ ...levelDB.levels[currLevel] });
+      setLevelScore([]);
     }
-    setLevelScore([]);
   }, [currLevel]);
 
   const display = level.people.map((x, i) => (
@@ -42,6 +42,7 @@ const Gallery = ({ bestScore, setBest, setNewScore }) => {
       setNewScore={setNewScore}
       levelScore={levelScore}
       setLevelScore={setLevelScore}
+      resetGame={resetGame}
     />
   ));
 
