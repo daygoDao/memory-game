@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Gallery from "./Gallery";
 import "./style.css";
 
@@ -6,6 +6,12 @@ function App() {
   const [currLevel, setNewLevel] = useState(0);
   const [currScore, setNewScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+
+  // useEffect( () => {
+  //   if(bestScore < currScore) {
+  //     setBestScore(currScore);
+  //   }
+  // }, [bestScore])
 
   return (
     <div className="App">

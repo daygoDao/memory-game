@@ -19,25 +19,24 @@ const Card = ({
   bestScore,
   levelScore,
   setLevelScore,
+  setNewScore,
 }) => {
-  // console.log(level, 'ayo')
-
   const handleShuffle = () => {
     console.log(levelScore.indexOf(name) !== -1);
     if (levelScore.indexOf(name) !== -1) {
       console.log("in arr");
-
-      if (levelScore.length > bestScore) {
-        setBest(levelScore.length);
-      }
+      setNewScore(0);
       setLevelScore([]);
     } else {
       console.log("not in arr");
       setLevelScore((prevState) => [...prevState, name]);
+      setNewScore((prev) => prev + 1);
+
+      if (levelScore.length > bestScore) {
+        setBest((prev) => levelScore.length);
+      }
     }
-
-
-
+    // rng peoples
     setLevel((prevState) => {
       console.log("setLevel called ", prevState);
       return { ...prevState, people: rngLevel(prevState.people) };
