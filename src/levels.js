@@ -26,4 +26,4 @@ const levels = [
   },
 ];
 
-export default {levels}
+export default levels

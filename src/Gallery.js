@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import Card from "./Card";
 import levelDB from "./levels";
 
-const Gallery = ({ bestScore, setBest, setNewScore }) => {
+const Gallery = ({ setNewScore }) => {
   const [currLevel, setNewLevel] = useState(0);
-  const [level, setLevel] = useState(levelDB.levels[currLevel]);
+  const [level, setLevel] = useState(levelDB[currLevel]);
   const [levelScore, setLevelScore] = useState([]);
 
   const resetGame = () => {
     setNewLevel(0);
-    setLevel({ ...levelDB.levels[0] });
+    setLevel({ ...levelDB[0] });
     setLevelScore([]);
   };
 
@@ -19,26 +19,24 @@ const Gallery = ({ bestScore, setBest, setNewScore }) => {
       setNewLevel((prev) => prev + 1);
     }
   }, [level, levelScore]);
- 
+
   // chevk if game is finished
   useEffect(() => {
-    if (currLevel > levelDB.levels.length - 1) {
+    if (currLevel > levelDB.length - 1) {
       alert("finished game, continue to add more to your score!");
       resetGame();
     } else {
-      setLevel({ ...levelDB.levels[currLevel] });
+      setLevel({ ...levelDB[currLevel] });
       setLevelScore([]);
     }
   }, [currLevel]);
 
   const display = level.people.map((x, i) => (
     <Card
-      name={x}
       key={i}
+      name={x}
       level={level}
-      bestScore={bestScore}
       setLevel={setLevel}
-      setBest={setBest}
       setNewScore={setNewScore}
       levelScore={levelScore}
       setLevelScore={setLevelScore}

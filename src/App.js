@@ -17,11 +17,7 @@ function App() {
       <h1>Memory Game</h1>
       <section>score: {currScore}</section>
       <section>best score: {bestScore}</section>
-      <Gallery
-        bestScore={bestScore}
-        setBest={setBestScore}
-        setNewScore={setNewScore}
-      />
+      <Gallery setNewScore={setNewScore} />
     </div>
   );
 }

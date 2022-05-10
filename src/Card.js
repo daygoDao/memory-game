@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const rngLevel = (levelArr) => {
   const shuffledArr = levelArr.map((x) => x);
   for (let i = shuffledArr.length - 1; i > 0; i--) {
@@ -15,8 +13,6 @@ const Card = ({
   name,
   level,
   setLevel,
-  setBest,
-  bestScore,
   levelScore,
   setLevelScore,
   setNewScore,
@@ -32,10 +28,6 @@ const Card = ({
       console.log("not in arr");
       setLevelScore((prevState) => [...prevState, name]);
       setNewScore((prev) => prev + 1);
-
-      if (levelScore.length > bestScore) {
-        setBest((prev) => levelScore.length);
-      }
     }
     // rng peoples
     setLevel((prevState) => {
