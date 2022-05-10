@@ -11,9 +11,17 @@ const levels = [
   {
     level: "marines",
     people: [
+      "robin",
+      "nami",
+      "jinbe",
+    ],
+  },
+  {
+    level: "evil",
+    people: [
+      "sanji",
       "zoro",
       "luffy",
-      "nami",
     ],
   },
 ];

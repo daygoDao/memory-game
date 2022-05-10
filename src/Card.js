@@ -21,6 +21,7 @@ const Card = ({
   setLevelScore,
   setNewScore,
 }) => {
+
   const handleShuffle = () => {
     console.log(levelScore.indexOf(name) !== -1);
     if (levelScore.indexOf(name) !== -1) {
