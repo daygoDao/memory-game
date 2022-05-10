@@ -46,7 +46,7 @@ const Gallery = ({ setNewScore }) => {
 
   return (
     <div>
-      <section>level: {currLevel}</section>
+      <section>level: {currLevel + 1}</section>
       <ul className="gallery">{display}</ul>
     </div>
   );
