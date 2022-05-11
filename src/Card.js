@@ -35,13 +35,11 @@ const Card = ({
     });
   };
 
+  // console.log(level.level);
+
   return (
     <li className="card" onClick={handleShuffle}>
-      <img
-        src={`./images/${level.level}/${name}.png 
-        `}
-        alt={name}
-      />
+      <img src={require(`./images/${level.level}/${name}.png`)} alt={name} />
     </li>
   );
 };
