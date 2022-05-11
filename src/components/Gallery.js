@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import Trackbar from "./Trackbar";
 import Card from "./Card";
 import levelDB from "../levels.js";
 
-const Gallery = ({ setNewScore }) => {
+const Gallery = ({ bestScore, currScore, setNewScore }) => {
   const [currLevel, setNewLevel] = useState(0);
   const [level, setLevel] = useState(levelDB[currLevel]);
   const [levelScore, setLevelScore] = useState([]);
@@ -46,8 +47,12 @@ const Gallery = ({ setNewScore }) => {
 
   return (
     <div>
-      <section>level: {currLevel + 1}</section>
-      <section>stage: {level.level.replace('_', ' ')}</section>
+      <Trackbar
+        bestScore={bestScore}
+        currScore={currScore}
+        currLevel={currLevel}
+        level={level}
+      />
       <ul className="gallery">{display}</ul>
     </div>
   );

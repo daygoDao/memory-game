@@ -13,5 +13,12 @@
 .gallery {
   display: flex;
   flex-flow: row wrap;
-  gap: 3rem
+  gap: 3rem;
+}
+
+.trackbar {
+  display: grid;
+  grid-template-columns: 2fr .5fr .5fr .5fr .5fr;
+  align-items: center;
+  justify-items: center;
 }

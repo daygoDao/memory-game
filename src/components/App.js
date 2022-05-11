@@ -14,10 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Game</h1>
-      <section>score: {currScore}</section>
-      <section>best score: {bestScore}</section>
-      <Gallery setNewScore={setNewScore} />
+      <Gallery
+        currScore={currScore}
+        bestScore={bestScore}
+        setNewScore={setNewScore}
+      />
     </div>
   );
 }
