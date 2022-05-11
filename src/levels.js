@@ -1,6 +1,6 @@
 const levels = [
   {
-    level: "wanted",
+    level: "wanted_strawhats",
     people: [
       "brook",
       "chopper",
@@ -30,7 +30,7 @@ const levels = [
     ],
   },
   {
-    level: "monster trio",
+    level: "monster_trio",
     people: ["sanji", "zoro", "luffy"],
   },
   {

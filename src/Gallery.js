@@ -47,6 +47,7 @@ const Gallery = ({ setNewScore }) => {
   return (
     <div>
       <section>level: {currLevel + 1}</section>
+      <section>stage: {level.level.replace('_', ' ')}</section>
       <ul className="gallery">{display}</ul>
     </div>
   );
