@@ -11,9 +11,16 @@ const levels = [
   {
     level: "marines",
     people: [
-      "robin",
-      "nami",
-      "jinbe",
+      "borsalino",
+      "drake",
+      "garp",
+      "issho",
+      "jon",
+      "koby",
+      "kuzan",
+      "sakazuki",
+      "sengoku",
+      "smoker"
     ],
   },
   {
