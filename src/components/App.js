@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Gallery from "./Gallery";
-import "./style.css";
+import "../style/style.css";
 
 function App() {
   const [currScore, setNewScore] = useState(0);

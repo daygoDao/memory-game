@@ -34,7 +34,7 @@ const levels = [
     people: ["sanji", "zoro", "luffy"],
   },
   {
-    level: "goofy",
+    level: "goofy_adventures",
     people: [
       "brush_teef",
       "bubble_boy",

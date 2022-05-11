@@ -39,7 +39,7 @@ const Card = ({
 
   return (
     <li className="card" onClick={handleShuffle}>
-      <img src={require(`./images/${level.level}/${name}.png`)} alt={name} />
+      <img src={require(`../images/${level.level}/${name}.png`)} alt={name} />
     </li>
   );
 };

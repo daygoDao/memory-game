@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Card from "./Card";
-import levelDB from "./levels";
+import levelDB from "../levels.js";
 
 const Gallery = ({ setNewScore }) => {
   const [currLevel, setNewLevel] = useState(0);
