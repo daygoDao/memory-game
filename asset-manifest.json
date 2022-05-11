@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/memory-game/static/css/main.d3991b5a.css",
-    "main.js": "/memory-game/static/js/main.bcab9828.js",
+    "main.js": "/memory-game/static/js/main.f030eac5.js",
+    "static/media/luffy.png": "/memory-game/static/media/luffy.ca777d1dd54eec025bd0.png",
+    "static/media/sanji.png": "/memory-game/static/media/sanji.4ec49a09ce1d7f11e43e.png",
+    "static/media/jinbe.png": "/memory-game/static/media/jinbe.b924853a2481fb0c83e8.png",
+    "static/media/zoro.png": "/memory-game/static/media/zoro.9eee7b923bf3113a3a41.png",
+    "static/media/robin.png": "/memory-game/static/media/robin.c18296caa96dec69659b.png",
+    "static/media/god.png": "/memory-game/static/media/god.4f2a6f48cde9c626618f.png",
+    "static/media/chopper.png": "/memory-game/static/media/chopper.eb8fb27f5bcc939e8b95.png",
+    "static/media/franky.png": "/memory-game/static/media/franky.cdba6b69eec3957b4f83.png",
+    "static/media/nami.png": "/memory-game/static/media/nami.f333fb3987c7711ce836.png",
+    "static/media/brook.png": "/memory-game/static/media/brook.237f3d483017295f7c54.png",
     "index.html": "/memory-game/index.html",
     "main.d3991b5a.css.map": "/memory-game/static/css/main.d3991b5a.css.map",
-    "main.bcab9828.js.map": "/memory-game/static/js/main.bcab9828.js.map"
+    "main.f030eac5.js.map": "/memory-game/static/js/main.f030eac5.js.map"
   },
   "entrypoints": [
     "static/css/main.d3991b5a.css",
-    "static/js/main.bcab9828.js"
+    "static/js/main.f030eac5.js"
   ]
 }
