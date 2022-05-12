@@ -14,11 +14,26 @@
   display: flex;
   flex-flow: row wrap;
   gap: 3rem;
+  border: 5px dotted salmon;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 85vh;
+  background-image: url("../images/strawhats_bg.jpg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .trackbar {
   display: grid;
-  grid-template-columns: 2fr .5fr .5fr .5fr .5fr;
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
   align-items: center;
   justify-items: center;
+  background-color: navajowhite;
+}
+
+.App {
+  background-color: black;
 }
