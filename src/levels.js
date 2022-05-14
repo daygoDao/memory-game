@@ -30,6 +30,23 @@ const levels = [
     ],
   },
   {
+    level: "worst_generation",
+    people: [
+      'apoo',
+      'bege',
+      'bonney',
+      'drake',
+      'hawkins',
+      'kid',
+      'killer',
+      'law',
+      'luffy',
+      'teach',
+      'urouge',
+      'zoro',
+    ]
+  },
+  {
     level: "monster_trio",
     people: ["sanji", "zoro", "luffy"],
   },
