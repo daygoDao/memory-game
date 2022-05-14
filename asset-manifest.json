@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/memory-game/static/css/main.02fc1448.css",
-    "main.js": "/memory-game/static/js/main.c352522b.js",
+    "main.js": "/memory-game/static/js/main.d2665b74.js",
     "static/media/namiSmile.png": "/memory-game/static/media/namiSmile.2cba32d225d9b8ab260c.png",
     "static/media/master_chef.png": "/memory-game/static/media/master_chef.11bdb82d1202aab33928.png",
     "static/media/old_man_strength.png": "/memory-game/static/media/old_man_strength.80ff476596cf2de23e71.png",
@@ -19,12 +19,20 @@
     "static/media/dirtbag_dad.png": "/memory-game/static/media/dirtbag_dad.233ca25415aa1615b029.png",
     "static/media/bubble_boy.png": "/memory-game/static/media/bubble_boy.7fb6f8d1908387614c92.png",
     "static/media/brush_teef.png": "/memory-game/static/media/brush_teef.abde5ecc0a562423adb1.png",
-    "static/media/garp.png": "/memory-game/static/media/garp.76bbf7248ff226f913aa.png",
-    "static/media/luffy.png": "/memory-game/static/media/luffy.ca777d1dd54eec025bd0.png",
-    "static/media/sanji.png": "/memory-game/static/media/sanji.4ec49a09ce1d7f11e43e.png",
-    "static/media/jinbe.png": "/memory-game/static/media/jinbe.b924853a2481fb0c83e8.png",
-    "static/media/zoro.png": "/memory-game/static/media/zoro.9eee7b923bf3113a3a41.png",
     "static/media/drake.png": "/memory-game/static/media/drake.42909c8eb8ff009e1bb9.png",
+    "static/media/teach.png": "/memory-game/static/media/teach.5652c545f980248a7aba.png",
+    "static/media/garp.png": "/memory-game/static/media/garp.76bbf7248ff226f913aa.png",
+    "static/media/law.png": "/memory-game/static/media/law.6cc3c627099eb92a769e.png",
+    "static/media/bonney.png": "/memory-game/static/media/bonney.bc065f5080e1c7b3fb78.png",
+    "static/media/luffy.png": "/memory-game/static/media/luffy.99c6554081e32ce6846b.png",
+    "static/media/sanji.png": "/memory-game/static/media/sanji.4ec49a09ce1d7f11e43e.png",
+    "static/media/hawkins.png": "/memory-game/static/media/hawkins.7db5f3bb64a9a7fd7013.png",
+    "static/media/bege.png": "/memory-game/static/media/bege.e3f007f21750099354a1.png",
+    "static/media/kid.png": "/memory-game/static/media/kid.0f67454e76b0e09cad55.png",
+    "static/media/jinbe.png": "/memory-game/static/media/jinbe.b924853a2481fb0c83e8.png",
+    "static/media/zoro.png": "/memory-game/static/media/zoro.ef3d5b4ef8f9f8e81759.png",
+    "static/media/urouge.png": "/memory-game/static/media/urouge.6cd2ae6969482a5c966e.png",
+    "static/media/killer.png": "/memory-game/static/media/killer.a9190c9699f6bc113532.png",
     "static/media/robin.png": "/memory-game/static/media/robin.c18296caa96dec69659b.png",
     "static/media/god.png": "/memory-game/static/media/god.4f2a6f48cde9c626618f.png",
     "static/media/borsalino.png": "/memory-game/static/media/borsalino.bbb67e2c819116312789.png",
@@ -38,13 +46,14 @@
     "static/media/nami.png": "/memory-game/static/media/nami.f333fb3987c7711ce836.png",
     "static/media/sengoku.png": "/memory-game/static/media/sengoku.e7f4ba4813f43b47261c.png",
     "static/media/kuzan.png": "/memory-game/static/media/kuzan.9ee33f6f484c380a8ed9.png",
+    "static/media/apoo.png": "/memory-game/static/media/apoo.bff1bfc79a4063f5039a.png",
     "static/media/brook.png": "/memory-game/static/media/brook.237f3d483017295f7c54.png",
     "index.html": "/memory-game/index.html",
     "main.02fc1448.css.map": "/memory-game/static/css/main.02fc1448.css.map",
-    "main.c352522b.js.map": "/memory-game/static/js/main.c352522b.js.map"
+    "main.d2665b74.js.map": "/memory-game/static/js/main.d2665b74.js.map"
   },
   "entrypoints": [
     "static/css/main.02fc1448.css",
-    "static/js/main.c352522b.js"
+    "static/js/main.d2665b74.js"
   ]
 }
