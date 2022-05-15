@@ -47,10 +47,6 @@ const levels = [
     ]
   },
   {
-    level: "monster_trio",
-    people: ["sanji", "zoro", "luffy"],
-  },
-  {
     level: "goofy_adventures",
     people: [
       "brush_teef",
