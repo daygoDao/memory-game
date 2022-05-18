@@ -21,11 +21,11 @@ const Card = ({
   const handleShuffle = () => {
     console.log(levelScore.indexOf(name) !== -1);
     if (levelScore.indexOf(name) !== -1) {
-      console.log("in arr");
+      console.log("already selected");
       setNewScore(0);
       resetGame();
     } else {
-      console.log("not in arr");
+      console.log("good choice :)");
       setLevelScore((prevState) => [...prevState, name]);
       setNewScore((prev) => prev + 1);
     }
