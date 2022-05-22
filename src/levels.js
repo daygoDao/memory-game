@@ -15,6 +15,14 @@ const levels = [
     ],
   },
   {
+    level: "goofy_2",
+    people: [
+      "daycare",
+      "doffy",
+      "love_letter"
+    ]
+  },
+  {
     level: "marines",
     people: [
       "borsalino",
