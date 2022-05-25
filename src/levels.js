@@ -17,6 +17,8 @@ const levels = [
   {
     level: "goofy_2",
     people: [
+      "rednose",
+      "nika",
       "daycare",
       "doffy",
       "love_letter"
