@@ -21,7 +21,10 @@ const levels = [
       "nika",
       "daycare",
       "doffy",
-      "love_letter"
+      "zoroYchopper",
+      "love_letter",
+      "honey",
+      "braids"
     ]
   },
   {
@@ -74,7 +77,6 @@ const levels = [
       "old_man_strength",
       "rabbit_d_luffy",
       "young_clown",
-      "zoroYchopper",
     ]
   },
 ];

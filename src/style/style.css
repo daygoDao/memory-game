@@ -1,13 +1,13 @@
 .card img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .card {
   list-style: none;
   border: 2px solid salmon;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .gallery {
